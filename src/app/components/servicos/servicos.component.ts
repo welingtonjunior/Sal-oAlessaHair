@@ -13,7 +13,7 @@ export class ServicosComponent{
   services = [
     {
       image: 'assets/mechas.jpg',
-      title: 'Mechas',
+      title: 'Coloração',
       description: 'Realce seu visual com mechas personalizadas e modernas.',
       link: 'https://wa.me/5532988723306?text=Olá%20AlessaHair,%20gostaria%20de%20mais%20informações%20sobre%20as%20Mechas'
     },
