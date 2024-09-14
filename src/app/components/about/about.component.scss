@@ -8,6 +8,7 @@
     text-align: center;
     background-color: $body-bg;
     color: $body-color;
+   
 }
 
 .sobre-content {
@@ -24,15 +25,17 @@
 }
 
 h1 {
-    font-size: 1.5rem;
-    color: $dark-color;
+    font-size: 2rem;
+    color: $secondary-color;
+    letter-spacing: 1px;
     margin-bottom: 20px;
     font-size: bold;
 }
 
 p {
-    font-size: 0.8rem;
+   
     line-height: 1.6;
     color: $dark-color;
     margin-bottom: 20px;
+    font: 0.875rem "Montserrat", sans-serif
 }

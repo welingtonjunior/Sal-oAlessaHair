@@ -9,8 +9,11 @@
     gap: 3px;
     
     .navbar-brand{
-        color: $secondary-color;
-        font-size: 1.5rem; 
+        h2{
+            color: $secondary-color;
+            font-size: 2rem; 
+
+        }
     }
     .navbar-nav{
         flex-direction: row;
