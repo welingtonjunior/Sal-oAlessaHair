@@ -1,0 +1,40 @@
+@import '../../../styles/_variables.scss';
+
+.navbar{
+    background-color: $dark-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    backdrop-filter: blur(10px);
+    gap: 3px;
+    
+    .navbar-brand{
+        color: $secondary-color;
+        font-size: 1.5rem; 
+    }
+    .navbar-nav{
+        flex-direction: row;
+        .nav-item{
+            padding: 5px;
+            a{
+                color: $light-color;
+                text-decoration: none; 
+                transition: color 0.3s ease;
+                
+                
+            
+                    &:hover {
+                        color: $secondary-color; 
+                    }
+            }
+           
+            
+
+        }
+        
+
+    }
+
+       
+}
+

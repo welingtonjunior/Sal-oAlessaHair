@@ -1,0 +1,50 @@
+@import '../../src/styles/variables';
+
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $light-color;
+}
+
+app-nav {
+    flex: 0 0 auto;
+}
+
+.main-content {
+    flex: 1 0 auto;
+    padding: 20px;
+}
+
+app-footer {
+    flex: 0 0 auto;
+}
+
+.social-media {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    z-index: 1000; 
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px; 
+    height: 25px;
+    background-color: $dark-color;
+    color: $primary-color;
+    border-radius: 50%; 
+    text-decoration: none;
+    font-size: 15px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.social-icon:hover {
+    background-color: $primary-color; 
+    color: $dark-color; 
+}

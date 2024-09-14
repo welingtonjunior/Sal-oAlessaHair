@@ -1,0 +1,65 @@
+@import '../../../styles/variables';
+
+.contact {
+    background-color: $light-color; 
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: $secondary-color; 
+    margin-bottom: 20px;
+}
+
+p {
+    color: $secondary-color;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $dark-color;
+    border-radius: 10px 0 10px 0;
+    background-color: $light-color; 
+    &:focus {
+        border-color: $secondary-color; 
+        box-shadow: 0 0 8px rgba($secondary-color, 0.5); 
+        outline: none; 
+    }
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.btn-submit {
+    background-color: $secondary-color; 
+    color: $dark-color; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-submit:hover {
+    background-color: #bfae9c; 
+}

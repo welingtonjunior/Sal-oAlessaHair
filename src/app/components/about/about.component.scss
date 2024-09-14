@@ -1,0 +1,38 @@
+/* src/app/sobre/sobre.component.scss */
+@import '../../../styles/variables';
+
+.sobre-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: $body-bg;
+    color: $body-color;
+}
+
+.sobre-content {
+    margin-top: 20px;
+}
+
+.sobre-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 2px solid $primary-color;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: $dark-color;
+    margin-bottom: 20px;
+    font-size: bold;
+}
+
+p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: $dark-color;
+    margin-bottom: 20px;
+}

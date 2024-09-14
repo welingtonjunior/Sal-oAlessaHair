@@ -1,0 +1,23 @@
+// src/styles/_variables.scss
+
+// Cores principais
+$primary-color: #ffffff; 
+$secondary-color: #dcbfa1; 
+$dark-color: #3e5c76; 
+$light-color: #f2f2f2; 
+
+// Cor dos cards
+$card-color: #ffffff; // Branco para manter a clareza e contraste com o fundo
+
+// Botões e elementos
+$btn-primary-bg: $secondary-color; // Usar a cor secundária para os botões
+$btn-primary-border: $secondary-color;
+$btn-primary-color: $dark-color; // Cor do texto dos botões
+
+// Links
+$link-color: $primary-color; // Branco para links no fundo escuro
+$link-hover-color: $secondary-color; // Amarelo Claro para hover
+
+// Outros
+$body-bg: $light-color; // Fundo claro para o corpo
+$body-color: $dark-color; // Texto escuro para contraste
