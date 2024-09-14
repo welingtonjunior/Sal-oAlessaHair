@@ -2,28 +2,35 @@
     <div class="contact-content">
         <h2>Fale Conosco</h2>
         <p>Deixe a sua Mensagem</p>
-        <form #form="ngForm">
+        <form #form="ngForm" (ngSubmit)="submit(form)">
             <div class="form-group">
-                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                <input type="text" name="nome" ngModel placeholder="Nome" required>
             </div>
 
             <div class="form-group">
-                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                <input type="email" name="email" ngModel placeholder="E-mail" required > 
             </div>
 
             <div class="form-group">
-                <input type="tel" id="celular" name="celular" placeholder="Celular" required>
+                <input type="tel" name="celular" ngModel placeholder="Celular" required>
             </div>
 
             <div class="form-group">
-                <input type="text" id="cidade" name="cidade" placeholder="Cidade Origem" required>
+                <input type="text" name="cidade" ngModel placeholder="Cidade Origem" required>
             </div>
 
             <div class="form-group">
-                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
+                <textarea name="mensagem" ngModel rows="4" placeholder="Mensagem" required></textarea>
             </div>
 
-            <button type="submit" class="btn-submit">Enviar</button>
+            <button type="submit" class="btn-submit" >Enviar</button>
         </form>
     </div>
 </section>
+<app-modal
+  *ngIf="showModal"
+  [title]="modalTitle"
+  [body]="modalBody"
+  (close)="closeModal()"
+  [autoCloseTime]="3000">
+</app-modal>

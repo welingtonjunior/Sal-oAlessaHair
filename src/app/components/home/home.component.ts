@@ -10,5 +10,5 @@ import { AboutComponent } from '../about/about.component';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
+  public href: string = 'https://wa.me/5532988723306?text=Olá%20AlessaHair,%20gostaria%20de%20agendar' 
 }
