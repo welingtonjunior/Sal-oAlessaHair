@@ -9,6 +9,7 @@
 .contact-content {
     max-width: 600px;
     margin: 0 auto;
+    text-align: center; // Adiciona centralização de texto se necessário
 }
 
 h2 {
@@ -23,31 +24,32 @@ p {
 
 .form-group {
     margin-bottom: 15px;
-}
 
-
-input[type="text"], 
-input[type="email"], 
-input[type="tel"], 
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid $dark-color;
-    border-radius: 10px 0 10px 0;
-    background-color: $light-color; 
-    &:focus {
-        border-color: $secondary-color; 
-        box-shadow: 0 0 8px rgba($secondary-color, 0.5); 
-        outline: none; 
+    // Garantir que os inputs e textarea estejam dentro das divs .form-group
+    input[type="text"], 
+    input[type="email"], 
+    input[type="tel"], 
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $dark-color;
+        border-radius: 10px; // Corrige o border-radius para todos os lados
+        background-color: $light-color; 
+        
+        &:focus {
+            border-color: $secondary-color; 
+            box-shadow: 0 0 8px rgba($secondary-color, 0.5); 
+            outline: none; 
+        }
     }
-}
 
-textarea {
-    resize: vertical;
-}
+    textarea {
+        resize: vertical;
+    }
 
-input[type="checkbox"] {
-    margin-right: 10px;
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
 }
 
 .btn-submit {
@@ -58,8 +60,8 @@ input[type="checkbox"] {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-}
-
-.btn-submit:hover {
-    background-color: #bfae9c; 
+    
+    &:hover {
+        background-color: darken($secondary-color, 10%); // Escurece a cor para o efeito hover
+    }
 }

@@ -1,13 +1,11 @@
 @import '../../../styles/_variables.scss';
 
-
-
 .footer {
     background-color: $dark-color;
     color: $primary-color;
     padding: 20px 0;
     font-size: 0.875rem;
-    
+
     .footer-content {
         display: flex;
         flex-direction: column;
@@ -19,11 +17,13 @@
         .footer-brand {
             text-align: center;
             margin-bottom: 20px;
+
             h2 {
                 font-size: 1.5rem;
                 color: $secondary-color;
                 margin-bottom: 5px;
             }
+
             p {
                 color: $light-color;
             }
@@ -38,7 +38,7 @@
 
             .nav-item {
                 margin: 0 15px;
-                
+
                 .nav-link {
                     color: $primary-color;
                     text-decoration: none;
@@ -61,15 +61,17 @@
             .social-media {
                 flex: 1;
                 margin: 10px;
-                a{
+
+                a {
                     font-size: 20px;
                     padding: 5px;
                     transition: color 0.3s ease;
 
-                        &:hover {
-                            color: #fff;
-                        }
+                    &:hover {
+                        color: #fff;
+                    }
                 }
+
                 h3 {
                     color: $secondary-color;
                     margin-bottom: 10px;
@@ -79,26 +81,14 @@
                 .social-icon {
                     color: $light-color;
                     margin-bottom: 10px;
-                    
                 }
-                p{
+
+                p {
                     font-size: 0.6rem;
-                    i{
+
+                    i {
                         margin-right: 5px;
                         color: $secondary-color;
-                    }
-                }
-                .social-media {
-                    display: flex;
-                    gap: 10px;
-
-                    .social-icon {
-                        i{
-                            font-size: 1.5rem;
-                        padding: 5px;
-                        color: $light-color;
-                        
-                        }
                     }
                 }
             }
@@ -106,6 +96,7 @@
 
         .footer-bottom {
             text-align: center;
+
             p {
                 color: $light-color;
                 margin: 0;
@@ -113,4 +104,3 @@
         }
     }
 }
-
