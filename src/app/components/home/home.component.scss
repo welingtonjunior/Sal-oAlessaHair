@@ -1,13 +1,14 @@
 
 @import '../../../styles/variables';
 .hero {
-    background: url('../../../assets/cut.jpeg') no-repeat center center/cover; 
-    color: $primary-color; 
-    text-align: center;
-    padding:  75px 10px;
-    position: relative;
-    min-height: 450px;
-   
+  background: url('../../../assets/cut.jpg') no-repeat center ;
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o fundo */
+  color: $primary-color;
+  text-align: center;
+  padding: 75px 10px;
+  position: relative;
+  min-height: 100svh; /* Ou use 100vh se preferir */
+  
    
   }
   
