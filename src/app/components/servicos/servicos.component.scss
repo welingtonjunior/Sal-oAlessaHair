@@ -1,6 +1,56 @@
+@import '../../../styles/variables';
+
 .carousel {
     padding: 40px 0;
-    carousel-item{
-        margin: 0 auto;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+}
+
+.carousel-item {
+    display: flex;
+    padding: 20px 0;
+    background-color: $light-color;
+    flex-direction: column; 
+    align-items: center;
+    margin: 0 auto;
+   
+}
+.section-header h2 {
+    font-size: 2rem;
+    color: $secondary-color; 
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    font-size: 1rem;
+    color: $dark-color;
+}
+.btn-primary {
+    background-color: $secondary-color;
+    border: none;
+    color: $dark-color;
+    border-radius: 40px;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .btn-primary:hover {
+    color: #fff;
+  }
+
+@media (min-width: 768px) {
+    .carousel-inner {
+        flex-direction: row; /* Alinha os cards ao lado em telas grandes */
+        flex-wrap: wrap; /* Permite que os cards quebrem para a linha seguinte se não houver espaço suficiente */
     }
-} 
+    
+    .carousel-item {
+        flex: 1; /* Permite que os cards se ajustem automaticamente */
+        margin: 0 10px; /* Espaçamento horizontal entre os cards */
+        max-width: calc(33.333% - 20px); /* Ajusta o tamanho dos cards */
+    }
+}
