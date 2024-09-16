@@ -34,8 +34,12 @@ export class CardComponent {
    */
   @Input() link: string = '';
 
+
   get backgroundImage() {
     return this.srcImage ? `url('${this.srcImage}')` : 'none';
+  }
+  get isVideo(): boolean {
+    return this.backgroundImage.endsWith('.mp4'); 
   }
 
 }
