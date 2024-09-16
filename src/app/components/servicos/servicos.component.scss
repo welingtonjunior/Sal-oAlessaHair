@@ -5,15 +5,15 @@
 }
 
 .carousel-inner {
-    display: flex;
-    flex-direction: column; 
-    gap: 30px;
+    display: block
+    // flex-direction: column; 
+  
 }
 
 .carousel-item {
-    display: flex;
+    
     background-color: $card-color;
-    flex-direction: column; 
+    // flex-direction: column; 
     align-items: center;
     padding: 20px;
     
@@ -56,8 +56,19 @@
     }
     
     .carousel-item {
+        display: flex;
         flex: 1; 
         margin: 0 10px; 
         max-width: 400px
     }
+}
+@media (max-width: 767px) {
+    .carousel {
+       
+        padding: 20px 0;
+        
+
+    }
+
+   
 }
